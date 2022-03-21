@@ -13,12 +13,13 @@ license = "MIT"
 
 
 [dependencies]
-curve25519-dalek = "3"
-sha2 = "0.9.5"
-rand = "0.7.3"
+#curve25519-dalek = "3"
+curve25519-dalek = { git = "https://github.com/mobilecoinfoundation/curve25519-dalek.git", rev = "8791722e0273762552c9a056eaccb7df6baf44d7" }
+sha2 = "0.10.2"
+rand = "0.8.5"
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = "0.3.5"
 
 [[bench]]
 name = "signature_bench"
